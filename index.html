@@ -43,14 +43,15 @@
 
 <body class="font-lato">
   <!-- Header section -->
-  <header class="max-w-screen-xl md:mx-auto mb-14 mx-7">
-    <nav class="lg:bg-red-600 my-12">
-      <div class="navbar flex justify-between lg:flex-row flex-row-reverse">
+  <header class="max-w-screen-xl md:mx-auto md:my-12 my-8 px-8">
+    <nav class="bg-red-600 rounded-full">
+      <div class="navbar my-14 flex justify-between lg:flex-row flex-row-reverse px-5">
         <div class="">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
-                <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </label>
             <ul tabindex="0"
@@ -62,106 +63,110 @@
             </ul>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu text-base menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Shop</a></li>
-              <li><a>News</a></li>
-              <li><a>Contact</a></li>
+            <ul class="menu text-base menu-horizontal">
+              <li class="text-[18px] font-normal text-white"><a>Home</a></li>
+              <li class="text-[18px] font-normal text-white"><a>Shop</a></li>
+              <li class="text-[18px] font-normal text-white"><a>News</a></li>
+              <li class="text-[18px] font-normal text-white"><a>Contact</a></li>
             </ul>
           </div>
         </div>
         <div class="">
-          <img src="./images/logo.png" alt="">
-          <h3>Fruit Burst</h3>
+          <img width="40px" class="py-4" src="./images/logo.png" alt="">
+          <h3 class="ml-2 md:ml-4 md:text-2xl lg:text-4xl text-xl font-bold md:text-white text-black ">Fruit Burst</h3>
         </div>
         <div class="hidden md:block relative">
-          <input type="text" name="" id="" placeholder="Search here">
-          <i class="fa-solid fa-magnifying-glass ml absolute right-0 cursor-pointer"></i>
+          <input class="rounded-full py-4 lg:pr-12 md:pr-10 pl-5 outline-none" type="text" name="" id="" placeholder="Search here">
+          <i class="fa-solid fa-magnifying-glass absolute right-5 top-[37%] cursor-pointer"></i>
         </div>
       </div>
     </nav>
-    <!-- Slider or carousel -->
-    <div class="carousel w-full lg:h-[550px] rounded-lg">
-      <!-- slide 1 -->
-      <div id="slide1" class="carousel-item relative w-full justify-center bg-hero-bg-1">
-        <div class="hero-overlay bg-opacity-40 py-14">
-          <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
-            <div class="space-y-7 text-center">
-              <h1 class="text-2xl lg:text-7xl font-bold text-white">
-                Exotic tastes at your <br> doorstep
-              </h1>
-              <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
-              <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
-                Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
-          <a href="#slide2" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
-        </div>
-      </div>
-      <!-- slide 2 -->
-      <div id="slide2" class="carousel-item relative w-full justify-center bg-hero-bg-2">
-        <div class="hero-overlay bg-opacity-40 py-14">
-          <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
-            <div class="space-y-7 text-center">
-              <h1 class="text-2xl lg:text-7xl font-bold text-white">
-                Exotic tastes at your <br> doorstep
-              </h1>
-              <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
-              <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
-                Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
-          <a href="#slide3" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
-        </div>
-      </div>
-      <!-- slide 3 -->
-      <div id="slide3" class="carousel-item relative w-full justify-center bg-hero-bg-3">
-        <div class="hero-overlay bg-opacity-40 py-14">
-          <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
-            <div class="space-y-7 text-center">
-              <h1 class="text-2xl lg:text-7xl font-bold text-white">
-                Exotic tastes at your <br> doorstep
-              </h1>
-              <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
-              <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
-                Now</button>
-            </div>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
-            <a href="#slide4" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
-          </div>
-        </div>
-      </div>
-      <!-- slide 4 -->
-      <div id="slide4" class="carousel-item relative w-full justify-center bg-hero-bg-4">
-        <div class="hero-overlay bg-opacity-40 py-14">
-          <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
-            <div class="space-y-7 text-center">
-              <h1 class="text-2xl lg:text-7xl font-bold text-white">
-                Exotic tastes at your <br> doorstep
-              </h1>
-              <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
-              <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
-                Now</button>
-            </div>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
-            <a href="#slide1" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
   <!-- Main section -->
-  <main></main>
+  <main>
+    <!-- Hero section  -->
+    <section class="max-w-screen-xl md:mx-auto mb-14 mx-7 md:px-8">
+      <div class="carousel w-full lg:h-[550px] rounded-lg">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full justify-center bg-hero-bg-1">
+          <div class="hero-overlay bg-opacity-40 py-14">
+            <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
+              <div class="space-y-7 text-center">
+                <h1 class="text-2xl lg:text-7xl font-bold text-white">
+                  Exotic tastes at your <br> doorstep
+                </h1>
+                <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
+                <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
+          </div>
+        </div>
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full justify-center bg-hero-bg-2">
+          <div class="hero-overlay bg-opacity-40 py-14">
+            <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
+              <div class="space-y-7 text-center">
+                <h1 class="text-2xl lg:text-7xl font-bold text-white">
+                  Exotic tastes at your <br> doorstep
+                </h1>
+                <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
+                <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
+                  Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
+          </div>
+        </div>
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full justify-center bg-hero-bg-3">
+          <div class="hero-overlay bg-opacity-40 py-14">
+            <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
+              <div class="space-y-7 text-center">
+                <h1 class="text-2xl lg:text-7xl font-bold text-white">
+                  Exotic tastes at your <br> doorstep
+                </h1>
+                <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
+                <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
+                  Now</button>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full justify-center bg-hero-bg-4">
+          <div class="hero-overlay bg-opacity-40 py-14">
+            <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24 justify-center">
+              <div class="space-y-7 text-center">
+                <h1 class="text-2xl lg:text-7xl font-bold text-white">
+                  Exotic tastes at your <br> doorstep
+                </h1>
+                <p class="text-white text-xs md:text-[18px] font-normal">We supply highly quality organic products</p>
+                <button class="btn bg-bike-primary-bg text-white bg-button-primary border-0 hover:bg-red-600">Shop
+                  Now</button>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-zinc-900 text-white border-0 hover:text-green-600">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+  </main>
   <!-- Footer section -->
   <footer></footer>
 </body>
